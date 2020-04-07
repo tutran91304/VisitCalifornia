@@ -37,15 +37,17 @@
             <tr>
                 <th>Name</th>
                 <th>Distance</th>
+                <th>Real Distance</th>
                 <th>Coordinates</th>
             </tr>
             @foreach (var t in Model.TouristAttractions)
             {
-                <tr>
-                    <td>@t.Name</td>
-                    <td>@t.Distance</td>
-                    <td>@t.Latitude, @t.Longitude</td>
-                </tr>
+        <tr>
+            <td>@t.Name</td>
+            <td>@t.Distance</td>
+            <td>@t.RealDistance</td>
+            <td>@t.Latitude, @t.Longitude</td>
+        </tr>
 
             }
         </table>

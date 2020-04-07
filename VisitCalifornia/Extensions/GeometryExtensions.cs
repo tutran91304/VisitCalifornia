@@ -5,7 +5,7 @@ using ProjNet.CoordinateSystems;
 using ProjNet.CoordinateSystems.Transformations;
 using System.Collections.Generic;
 
-namespace Tourism.Utils
+namespace VisitCalifornia.Extensions
 {
     static class GeometryExtensions
     {

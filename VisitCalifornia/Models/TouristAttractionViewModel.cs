@@ -6,5 +6,6 @@ namespace VisitCalifornia.Models
         public double Longitude { get; set; }
         public string Name { get; set; }
         public double Distance { get; set; }
+        public double RealDistance { get; set; }
     }
 }
