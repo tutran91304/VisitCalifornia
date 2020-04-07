@@ -10,8 +10,8 @@ using VisitCalifornia;
 namespace VisitCalifornia.Migrations
 {
     [DbContext(typeof(VisitCaliforniaDbContext))]
-    [Migration("20200407152139_AddTouristAttractionTable")]
-    partial class AddTouristAttractionTable
+    [Migration("20200407164708_AddAttractionTable")]
+    partial class AddAttractionTable
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -49,7 +49,7 @@ namespace VisitCalifornia.Migrations
                         {
                             Id = 2,
                             Location = (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (34.4272181 -118.5995318)"),
-                            Name = "The Golden Temple of Amritsar"
+                            Name = "Magic Mountain"
                         },
                         new
                         {

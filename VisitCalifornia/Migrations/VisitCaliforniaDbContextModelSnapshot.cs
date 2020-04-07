@@ -47,7 +47,7 @@ namespace VisitCalifornia.Migrations
                         {
                             Id = 2,
                             Location = (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (34.4272181 -118.5995318)"),
-                            Name = "The Golden Temple of Amritsar"
+                            Name = "Magic Mountain"
                         },
                         new
                         {

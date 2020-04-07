@@ -3,7 +3,7 @@ using NetTopologySuite.Geometries;
 
 namespace VisitCalifornia.Migrations
 {
-    public partial class AddTouristAttractionTable : Migration
+    public partial class AddAttractionTable : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -27,7 +27,7 @@ namespace VisitCalifornia.Migrations
                 values: new object[,]
                 {
                     { 1, (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (33.812511 -117.918976)"), "Disney Land" },
-                    { 2, (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (34.4272181 -118.5995318)"), "The Golden Temple of Amritsar" },
+                    { 2, (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (34.4272181 -118.5995318)"), "Magic Mountain" },
                     { 3, (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (34.141354 -118.352898)"), "Universal Studios" },
                     { 4, (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (33.1227 -117.3067)"), "Legoland" },
                     { 5, (NetTopologySuite.Geometries.Point)new NetTopologySuite.IO.WKTReader().Read("SRID=4326;POINT (37.8197222 -122.4788889)"), "Golden Gate Bridge" },

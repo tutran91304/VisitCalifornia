@@ -26,7 +26,7 @@ namespace VisitCalifornia
                     new TouristAttraction
                     {
                         Id = 2,
-                            Name = "The Golden Temple of Amritsar",
+                            Name = "Magic Mountain",
                             Location = geometryFactory.CreatePoint(new Coordinate(34.4272181, -118.5995318))
                     },
                     new TouristAttraction
