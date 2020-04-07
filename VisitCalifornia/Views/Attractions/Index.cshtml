@@ -1,0 +1,62 @@
+﻿@{
+    ViewData["Title"] = "Visit California";
+}
+
+@model AttractionViewModel
+
+<form asp-controller="Attractions"
+      asp-action="Search"
+      method="post"
+      class="form-horizontal"
+      role="form">
+
+    <div class="form-group">
+        <label for="Title">Latitude</label>
+        <input class="form-control"
+               placeholder="Enter Latitude"
+               asp-for="SearchInput.Latitude">
+    </div>
+    <div class="form-group">
+        <label for="Title">Longitude</label>
+        <input class="form-control"
+               placeholder="Enter Longitude"
+               asp-for="SearchInput.Longitude">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+@{
+    if (Model?.TouristAttractions?.Any() == true)
+    {
+        <br>
+
+        <br>
+
+        <table class="table table-bordered table-responsive table-hover">
+            <tr>
+                <th>Name</th>
+                <th>Distance</th>
+                <th>Coordinates</th>
+            </tr>
+            @foreach (var t in Model.TouristAttractions)
+            {
+                <tr>
+                    <td>@t.Name</td>
+                    <td>@t.Distance</td>
+                    <td>@t.Latitude, @t.Longitude</td>
+                </tr>
+
+            }
+        </table>
+    }
+    else
+    {
+        <br>
+
+        <br>
+        <div class="alert alert-warning" role="alert">
+            <strong>Please enter Latitude and Longitude of the location</strong>
+        </div>
+    }
+}
