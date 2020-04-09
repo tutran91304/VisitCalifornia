@@ -25,8 +25,6 @@ namespace VisitCalifornia.Controllers
         public IActionResult Search([FromForm] AttractionViewModel indexModel)
         {
 
-
-
             var indexViewModel = new AttractionViewModel
             {
                 SearchInput = indexModel.SearchInput
@@ -56,7 +54,7 @@ namespace VisitCalifornia.Controllers
                     Latitude = t.Place.Location.X,
                     Longitude = t.Place.Location.Y,
                     Name = t.Place.Name,
-                    RealDistance = Math.Round(t.RealDistance, 6),
+                    RealDistance = Math.Round(t.RealDistance / 1000, 6),
                 }).ToList();
 
             return View("Index", indexViewModel);
